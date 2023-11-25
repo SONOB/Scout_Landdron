@@ -24,7 +24,7 @@ Data data;
 void setup() {
   Serial.begin(9600); //nRF24L01모듈 테스트전 시리얼로 확인 필요
   radio.begin();
-  radio.setAutoAck(false);
+  radio.setAutoAck(true);
   radio.openWritingPipe(address);
   radio.setPALevel(RF24_PA_MAX); //라디오 통신값 최대로설정 (MIN, LOW, HIGH, MAX 4가지 값이있음)
   radio.stopListening();
