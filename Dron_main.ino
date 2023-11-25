@@ -25,7 +25,7 @@ void setup() {
   Serial.begin(9600);
   pinMode(LED,OUTPUT);
   radio.begin();
-  radio.setAutoAck(false);
+  radio.setAutoAck(true);
   motor1.attach (5);
   motor2.attach (6);
   motor1.write(60);
